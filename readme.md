@@ -32,14 +32,23 @@ Avant d'utiliser ce script, assurez-vous d'avoir les éléments suivants install
 
 Assurez-vous d'avoir connecté le système SmartUPS au port série spécifié dans la configuration.
 
-Exécutez le script Python en utilisant la commande suivante :
+
 
 
 
 ## Exécution du script :
+Exécutez le script Python en utilisant la commande suivante :
     python smartups_mqtt.py
 
 Le script lira les informations SmartUPS à partir du port série et les enverra périodiquement au broker MQTT sous forme de messages JSON.
+
+## Configuration Port Raspberry
+
+    nano /boot/config.txt
+
+pip install paho-mqtt
+minicom -D /dev/ttyS0 -b 9600  
+ls -l /dev
 
 ## Câblage
 
