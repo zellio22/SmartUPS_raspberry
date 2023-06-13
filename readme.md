@@ -40,3 +40,15 @@ Exécutez le script Python en utilisant la commande suivante :
     python smartups_mqtt.py
 
 Le script lira les informations SmartUPS à partir du port série et les enverra périodiquement au broker MQTT sous forme de messages JSON.
+
+## Câblage
+
+![SmartUPS](images/all.jpg)
+
+## screenshot
+
+![SmartUPS](images/Capture_1.jpg)
+
+Capture de [MQTTX](https://mqttx.app/)
+
+![SmartUPS](images/Capture_mosquitto.jpg)
