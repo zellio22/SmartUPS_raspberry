@@ -47,8 +47,8 @@ Le script lira les informations SmartUPS à partir du port série et les enverra
 
 ## screenshot
 
-![SmartUPS](images/Capture_1.jpg)
+![SmartUPS](images/Capture_1.JPG)
 
 Capture de [MQTTX](https://mqttx.app/)
 
-![SmartUPS](images/Capture_mosquitto.jpg)
+![SmartUPS](images/Capture_mosquitto.JPG)
