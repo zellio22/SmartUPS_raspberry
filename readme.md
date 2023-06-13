@@ -44,11 +44,32 @@ Le script lira les informations SmartUPS à partir du port série et les enverra
 
 ## Configuration Port Raspberry
 
+    raspi-config
+
+Choisir l'option 3 Interface Option // I6 Serial Port // Login Shell "NO!"//Serial Port hardware "YES"
+Verification de la config 
+
     nano /boot/config.txt
 
-pip install paho-mqtt
-minicom -D /dev/ttyS0 -b 9600  
-ls -l /dev
+![SmartUPS](images/rspi_config.JPG)
+
+Apres un reboot verifier 
+
+    ls -l /dev
+
+![SmartUPS](images/port_rspi.JPG)
+
+Instalation de [paho-mqtt](https://pypi.org/project/paho-mqtt/)
+
+    pip install paho-mqtt
+
+
+
+La commande Minicom pour verifier le bon fonctionnement 
+
+    minicom -D /dev/ttyS0 -b 9600  
+
+
 
 ## Câblage
 
