@@ -40,7 +40,7 @@ while True:
     ser.reset_input_buffer()
     time.sleep(1)
     line = ser.readline().decode().strip()
-    
+    client.loop()
 #$ SmartUPS V3.2P,Vin GOOD,BATCAP 83,Vout 5250 $
 
     # Analyse des données
